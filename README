@@ -1,7 +1,7 @@
 $dellflash$
 
 THIS TOOL IS FOR USER CONVENIENCE ONLY.  IT IS NOT WRITTEN BY DELL AND ALL
-REPONSIBILITY LAYS WITH THE USER.  IF YOU BRICK YOUR BOX YOU OWN IT. DO NOT
+RESPONSIBILITY LAYS WITH THE USER.  IF YOU BRICK YOUR BOX YOU OWN IT. DO NOT
 BLAME ANYONE BUT YOURSELF.  WHEN IN DOUBT DON'T USE IT.  REALLY DON'T USE IT.
 
 Boot the machine into securelevel -1 (set in /etc/rc.securelevel)
@@ -19,13 +19,13 @@ image into memory.  Upon reboot the server will flash the BIOS.
 
 Remember to set securelevel back to its normal value!
 
-Yhere are several ways to obtain the BIOS hdr files.
+There are several ways to obtain the BIOS hdr files.
 1. http://linux.dell.com/repo/firmware/bios-hdrs/
 	this require one to match the BIOS to product ID.  For example
 	pcidump -v | grep 1028
 		0x002c: Subsystem Vendor ID: 1028 Product ID: 024f
 	then find the .hdr directory with 0x024f and download bios.hdr
-	Note: this reposotiry isn't always up to date!
+	Note: this repository isn't always up to date!
 
 2. Download the .exe BIOS update for windows from support.dell.com and from
 	a windows box run it like:
