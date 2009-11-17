@@ -1,4 +1,4 @@
-/* $dellflash $ */
+/* $dellflash$ */
 /*
  * Copyright (c) 2009 Marco Peereboom <marco@peereboom.us>
  * Copyright (c) 2009 Jordan Hargrave <jordan@peereboom.us>
