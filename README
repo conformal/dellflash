@@ -4,14 +4,16 @@ THIS TOOL IS FOR USER CONVENIENCE ONLY.  IT IS NOT WRITTEN BY DELL AND ALL
 REPONSIBILITY LAYS WITH THE USER.  IF YOU BRICK YOUR BOX YOU OWN IT. DO NOT
 BLAME ANYONE BUT YOURSELF.  WHEN IN DOUBT DON'T USE IT.  REALLY DON'T USE IT.
 
-change into the dellflash directory and s root run the following commands:
+Boot the machine into securelevel -1 or 0 (set in /etc/rc.securelevel)
+
+Change into the dellflash directory and s root run the following commands:
 make
 make load
 flashit/flashit pv1950_2.6.1.hdr
 reboot
 
 In this example it will load the Dell PowerEdge 1950 to BIOS 2.6.1 flash
-image into memory.
+image into memory.  Upon reboot the server will flash the BIOS.
 
 Yhere are several ways to obtain the BIOS hdr files.
 1. http://linux.dell.com/repo/firmware/bios-hdrs/
