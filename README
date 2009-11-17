@@ -6,6 +6,8 @@ BLAME ANYONE BUT YOURSELF.  WHEN IN DOUBT DON'T USE IT.  REALLY DON'T USE IT.
 
 Boot the machine into securelevel -1 or 0 (set in /etc/rc.securelevel)
 
+Ensure that there is a fresh kernel source checked out on the build machine.
+
 Change into the dellflash directory and s root run the following commands:
 make
 make load
