@@ -1,0 +1,36 @@
+$dellflash$
+
+THIS TOOL IS FOR USER CONVENIENCE ONLY.  IT IS NOT WRITTEN BY DELL AND ALL
+REPONSIBILITY LAYS WITH THE USER.  IF YOU BRICK YOUR BOX YOU OWN IT. DO NOT
+BLAME ANYONE BUT YOURSELF.  WHEN IN DOUBT DON'T USE IT.  REALLY DON'T USE IT.
+
+change into the dellflash directory and s root run the following commands:
+make
+make load
+flashit/flashit pv1950_2.6.1.hdr
+reboot
+
+In this example it will load the Dell PowerEdge 1950 to BIOS 2.6.1 flash
+image into memory.
+
+Yhere are several ways to obtain the BIOS hdr files.
+1. http://linux.dell.com/repo/firmware/bios-hdrs/
+	this require one to match the BIOS to product ID.  For example
+	pcidump -v | grep 1028
+		0x002c: Subsystem Vendor ID: 1028 Product ID: 024f
+	then find the .hdr directory with 0x024f and download bios.hdr
+	Note: this reposotiry isn't always up to date!
+
+2. Download the .exe BIOS update for windows from support.dell.com and from
+	a windows box run it like:
+	PE1950_BIOS_WIN_2.6.1.exe /s /e=2.6.1
+	then in the 2.6.1 directory find the .hdr file (might be in a payload
+	directory as well)
+
+3. Download the .BIN BIOS update for linux from support.dell.com and on any
+	machine edit the file in your favorite (NON WINDOWS!!) editor.
+	Find the line that reads: #####Startofpackage#####^M
+	and delete everything, including that line, in front of it.  Write
+	the remaining file with a .tgz extension.
+	Untar the tgz file that was generated and go find the .hdr file which
+	again might be in a payload directory.
