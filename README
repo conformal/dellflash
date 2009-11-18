@@ -32,6 +32,10 @@ There are several ways to obtain the BIOS hdr files.
 	PE1950_BIOS_WIN_2.6.1.exe /s /e=2.6.1
 	then in the 2.6.1 directory find the .hdr file (might be in a payload
 	directory as well)
+	- or -
+	laptops or desktops sometimes can be run like:
+	E6500A16.EXE /writehdrfile
+	in this example the executable writes E6500A16.hdr
 
 3. Download the .BIN BIOS update for linux from support.dell.com and on any
 	machine edit the file in your favorite (NON WINDOWS!!) editor.
