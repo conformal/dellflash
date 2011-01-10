@@ -4,7 +4,7 @@ SRCS=biosmod.c
 OBJS=$(SRCS:.c=.o)
 
 KMOD=biosmod
-CFLAGS+= -fPIC -D_KERNEL -I/sys
+CFLAGS+= -fPIC -fno-builtin -D_KERNEL -I/sys
 
 all:	$(OBJS)
 
