@@ -4,11 +4,13 @@ THIS TOOL IS FOR USER CONVENIENCE ONLY.  IT IS NOT WRITTEN BY DELL AND ALL
 RESPONSIBILITY LAYS WITH THE USER.  IF YOU BRICK YOUR BOX YOU OWN IT. DO NOT
 BLAME ANYONE BUT YOURSELF.  WHEN IN DOUBT DON'T USE IT.  REALLY DON'T USE IT.
 
+Read these instruction IN FULL before proceeding.
+
 Boot the machine into securelevel -1 (set in /etc/rc.securelevel)
 
 Ensure that there is a fresh kernel source checked out on the build machine.
 
-Change into the dellflash directory and s root run the following commands:
+Change into the dellflash directory and as root run the following commands:
 make
 make load
 flashit/flashit pv1950_2.6.1.hdr
@@ -43,6 +45,7 @@ There are several ways to obtain the BIOS hdr files.
 	mount c /tmp
 	goto new mounted drive by typing: C:
 	then you can run the same command as above: E6500A16.EXE /writehdrfile
+	after the command completes the HDR file is in the directory
 
 3. Download the .BIN BIOS update for linux from support.dell.com and on any
 	machine edit the file in your favorite (NON WINDOWS!!) editor.
