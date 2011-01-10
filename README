@@ -36,6 +36,13 @@ There are several ways to obtain the BIOS hdr files.
 	laptops or desktops sometimes can be run like:
 	E6500A16.EXE /writehdrfile
 	in this example the executable writes E6500A16.hdr
+	- or -
+	install dosbox: pkg_add dosbox
+	run it by simply typing: dosbox
+	mount the directory where you downloaded the .EXE file, for example:
+	mount c /tmp
+	goto new mounted drive by typing: C:
+	then you can run the same command as above: E6500A16.EXE /writehdrfile
 
 3. Download the .BIN BIOS update for linux from support.dell.com and on any
 	machine edit the file in your favorite (NON WINDOWS!!) editor.
